@@ -1,0 +1,198 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Play Temple Run 2 Online</title>
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover' />
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="manifest" href="manifest.json">
+<meta charset="UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en">
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta property="og:site_name" content="Play Temple Run 2 Online" />
+<meta property="article:publisher" content="https://www.facebook.com/w3technic/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@w3technic" />
+<meta name="twitter:creator" content="@w3technic" />
+<meta name="twitter:title" content="Temple Run 2 Game" />
+<meta property="og:title" content="Temple Run 2 Game" />
+<meta name="twitter:description" content="Play Temple Run 2 Online for Free. Find out why Temple Run 2 has become one of the most popular mobile games in history. Play for FREE." />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Play Temple Run 2 Online for Free. Find out why Temple Run 2 has become one of the most popular mobile games in history. Play for FREE." />
+<meta property="og:url" content="https://templerun.ee/" />
+<link rel="canonical" href="https://templerun.ee/" />
+<meta name="title" content="Temple Run 2 Game - Play Temple Run 2 Online" />
+<meta name="description" content="Play Temple Run 2 Online for Free. Find out why Temple Run 2 has become one of the most popular mobile games in history. Play for FREE." />
+<meta property="og:image" content="https://templerun.ee/thumb.png" />
+<meta name="twitter:image" content="https://templerun.ee/thumb.png" />
+<meta itemprop="image" content="https://templerun.ee/thumb.png" />
+<link rel="icon" href="/180.png">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/gracehuynhh/doodlejump/w3navigation.css" />
+<style>
+         #container {
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0px;
+         left: 0;
+         width: auto;
+         height: auto;
+         overflow: hidden;
+         }
+         #frame {
+         border: none;
+         width: 100%;
+         height: 100%;
+         overflow: hidden;
+         }
+         #menu1 li a {
+display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+}
+      </style>
+</head>
+<body>
+<aside>
+<div id="full-screen-game-div-button">
+<nav>
+<a href="#" id="fullscreen"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="#fff" d="M24 9h-2v-5h-7v-2h9v7zm-9 13v-2h7v-5h2v7h-9zm-15-7h2v5h7v2h-9v-7zm9-13v2h-7v5h-2v-7h9z"></path></svg></a>
+</nav>
+</div>
+</aside>
+
+
+
+
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+
+<div id='container'>
+<iframe id='frame' src='https://gamemonetize.co/game/pkyyuilfrqkcdnmrxsg60j22ypk0peje/' webkitallowfullscreen='true' mozallowfullscreen='true' allow='autoplay' allowfullscreen='true' allowvr scrolling='no' frameBorder='0'>
+         </iframe>
+</div>
+
+<script type="a43f56b88dbd157fe14022a3-text/javascript">
+         var iframe = document.getElementById('frame');
+         
+         // aggregate fullscreen to one method
+         iframe.requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+         var button = document.getElementById('fullscreen');
+         
+         // detect fullscreen is supported
+         if (iframe.requestFullScreen) {
+             button.classList.add('available');
+             button.addEventListener('click', function() {
+                 iframe.requestFullScreen();
+         
+             }, false);
+         }
+         
+         // focus the iframe window so that keyboard works.
+         // (Chrome Fix: do this after the iframe has loaded
+         // otherwise gamepads don't work)
+         iframe.addEventListener('load', function () {
+             iframe.contentWindow.focus();
+         });
+         
+      </script>
+
+<script type="a43f56b88dbd157fe14022a3-text/javascript">
+         (function() {
+         
+             // Needed as we will have edge cases for particular versions of iOS
+             // returns null if not iOS
+             var getIosVersion = function () {
+                 if (/iP(hone|od|ad)/.test(navigator.platform)) {
+                     var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+                     var version = [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+                     return version;
+                 }
+         
+                 return null;
+             }
+         
+             var iosVersion = getIosVersion();
+             var iframe = document.getElementById('frame');
+
+             var container = document.getElementById('container');
+             var lastWindowHeight = window.innerHeight;
+             var lastWindowWidth = window.innerWidth;
+             var windowSizeChangeIntervalHandler = null;
+         
+             var resizeContainer = function () {
+                 var width = window.innerWidth;
+         
+                 // Take into account of the footer
+                 var height = window.innerHeight;
+         
+                 container.style.height = height + 'px';
+                 container.style.width = width + 'px';
+         
+                 iframe.style.height = height + 'px';
+                 iframe.style.width = width + 'px';
+         
+                 lastWindowHeight = window.innerHeight;
+                 lastWindowWidth = window.innerWidth;
+         
+                 // Work around when in landscape to work on iOS 12 otherwise
+                 // the content is under the URL bar at the top
+                 if (iosVersion && iosVersion[0] <= 12) {
+                     window.scrollTo(0, 0);
+                 }
+             };
+         
+             var reflow = function () {
+                 resizeContainer();
+                 // Poll for size changes as the window inner height can change after the resize event for iOS
+                 // Have one tab only, and rotate to portrait -> landscape -> portrait
+                 if (windowSizeChangeIntervalHandler === null) {
+                     windowSizeChangeIntervalHandler = setInterval(function () {
+                         if (lastWindowHeight !== window.innerHeight || lastWindowWidth !== window.innerWidth) {
+                             resizeContainer();
+                         }
+                     }, 100);
+         
+                     // Don't want to do this all the time so stop polling after some short time
+                     setTimeout(function() {
+                         if (!!windowSizeChangeIntervalHandler) {
+                             clearInterval(windowSizeChangeIntervalHandler);
+                             windowSizeChangeIntervalHandler = null;
+                         }
+                     }, 2000);
+                 }
+             };
+         
+             window.addEventListener('resize', reflow, false);
+             window.addEventListener('orientationchange', reflow, false);
+         
+             iframe.addEventListener('load', function () {
+                 reflow();
+             });
+         })();
+      </script>
+
+<script type="a43f56b88dbd157fe14022a3-text/javascript">
+      // Set the options globally
+      // to make LazyLoad self-initialize
+      window.lazyLoadOptions = {
+        // Your custom settings go here
+      };
+      
+    </script>
+<script async defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.1/dist/lazyload.min.js" type="a43f56b88dbd157fe14022a3-text/javascript"></script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="a43f56b88dbd157fe14022a3-|49" defer=""></script></body>
+</html>
